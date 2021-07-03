@@ -17,13 +17,9 @@ export default function SaveTxt() {
     http.patch('http://localhost:8000/safe',{
       text: curtxt
     }).then(res=>{
-      console.log(res)
+      // console.log(res)
     })
   } 
-  const changeCount = ()=>{
-    setCount(count+1)
-    console.log(count)
-  }
   const getData = (data)=>{
     // console.log(data)
     setcurtxt(data)
@@ -32,7 +28,6 @@ export default function SaveTxt() {
     <div>
       <Editer style={{height:'400px'}} toParent={getData} value={txt}/>
 
-      <div onClick={changeCount}>{count}</div>
       <Button type="primary" onClick={save}>保存</Button>
     </div>
   )
