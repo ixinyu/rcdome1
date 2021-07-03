@@ -1,4 +1,5 @@
 import axios from 'axios'
+import {getToken} from './auth'
 const baseUrl = ''
 const instance = axios.create({
   baseURL: baseUrl, // api的base_url
@@ -9,8 +10,7 @@ const instance = axios.create({
 instance.interceptors.request.use(function (config) {
   config.headers = {
     // 'Content-Type':'multipart/form-data',
-    // 'token':getToken()
-    'token':'TAI5oQsMgd20de1KocW5TOs7X0s'
+    'token':getToken()
   }
   return config;
 }, function (error) {

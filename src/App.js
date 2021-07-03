@@ -3,6 +3,7 @@ import {HashRouter,Switch,Route,Redirect} from 'react-router-dom'
 import Login from './views/login/Login'
 import AppMain from './components/AppMain'
 import './App.css'
+import './styles/base.scss';
 function App() {
   return (
     // <IndexRoute></IndexRoute>
