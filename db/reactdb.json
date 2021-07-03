@@ -1,0 +1,152 @@
+{
+  "rights": [
+    {
+      "id": 1,
+      "key": "/home",
+      "title": "首页",
+      "icon": "<UserOutlined />",
+      "pagePermission": 1
+    },
+    {
+      "id": 2,
+      "key": "/hotel",
+      "title": "酒店管理",
+      "icon": "<UserOutlined />",
+      "pagePermission": 1
+    },
+    {
+      "id": 3,
+      "key": "/role",
+      "title": "角色管理",
+      "icon": "<UserOutlined />",
+      "pagePermission": 1
+    }
+  ],
+  "children": [
+    {
+      "id": 1,
+      "rightId": 2,
+      "key": "/hotel/hotelList",
+      "title": "酒店列表",
+      "icon": "<UserOutlined />",
+      "pagePermission": 1
+    },
+    {
+      "id": 2,
+      "rightId": 2,
+      "key": "/hotel/HotelType",
+      "title": "酒店分类",
+      "icon": "<UserOutlined />",
+      "pagePermission": 1
+    },
+    {
+      "id": 3,
+      "rightId": 2,
+      "key": "/hotel/addHotelType",
+      "title": "添加酒店分类",
+      "icon": "<UserOutlined />"
+    },
+    {
+      "id": 4,
+      "rightId": 3,
+      "key": "/role/addrole",
+      "title": "添加角色",
+      "icon": "<UserOutlined />"
+    }
+  ],
+  "hotelList": [
+    {
+      "id": 1,
+      "uname": "胡彦斌",
+      "hotel_name": "九云酒店智能",
+      "hotel_phones": "13569805036"
+    },
+    {
+      "id": 2,
+      "uname": "路海朋",
+      "hotel_name": "智慧酒店",
+      "hotel_phones": "13569806066"
+    },
+    {
+      "uname": "沙发",
+      "hotel_name": "阿斯顿发",
+      "hotel_phones": "13569805036",
+      "id": 4
+    },
+    {
+      "uname": "胡彦斌",
+      "hotel_name": "九云酒店11",
+      "hotel_phones": "13569805036",
+      "id": 5
+    },
+    {
+      "uname": "asf水电费",
+      "hotel_name": "阿三发顺丰的",
+      "hotel_phones": "沙的地方",
+      "id": 7
+    },
+    {
+      "uname": "阿道夫",
+      "hotel_name": "阿发",
+      "hotel_phones": "阿发",
+      "id": 8
+    },
+    {
+      "uname": "阿道夫水电费",
+      "hotel_name": "阿发2千万人萨达",
+      "hotel_phones": "阿发",
+      "id": 11
+    },
+    {
+      "hotel_name": "是否",
+      "uname": "yy阿发",
+      "hotel_phones": "13569805036",
+      "id": 12
+    }
+  ],
+  "hotelType": [
+    {
+      "id": 1,
+      "typeName": "五星级",
+      "sort": 1
+    },
+    {
+      "typeName": "高档酒店",
+      "sort": "0",
+      "id": 2
+    },
+    {
+      "typeName": "四星级",
+      "sort": "0",
+      "id": 3
+    },
+    {
+      "typeName": "舒适",
+      "sort": "0",
+      "id": 4
+    }
+  ],
+  "safe": {
+    "text": "<p>我是安全手册阿萨达111</p>"
+  },
+  "roleList": [
+    {
+      "id": 1,
+      "roleName": "财务",
+      "rightsList": [
+        "/home",
+        "/hotel/HotelType",
+        "/hotel/addHotelType"
+      ]
+    },
+    {
+      "id": 2,
+      "roleName": "行政",
+      "rightsList": [
+        "/hotel/HotelType",
+        "/role/addrole",
+        "/role"
+      ]
+    }
+  ]
+}

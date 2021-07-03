@@ -1,0 +1,29 @@
+{
+  "posts": [
+    {
+      "title": "测试数据22",
+      "author": "xiaoming",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "title": "asfsd",
+      "author": "sdf"
+    },
+    {
+      "title": "ss",
+      "author": "aa",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
