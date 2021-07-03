@@ -1,13 +1,15 @@
 import React from 'react'
 import { Form, Input, Button ,message } from 'antd';
 import http from '../../utils/request'
+import qs from 'querystring'
 export default function AddHotelType(props) {
-  // const id = props.location?.query?.id || ""
-  console.log(props)
-  console.log(props.location.search)
+  const {search=''} = props.location
+  const obj = qs.parse(search.slice(1))
+  const {id=''} = obj
+  // const id = props.location?.query?.id || "" //1
   // const { match: { params = {} } } = props
-  // const { id = '' } = params
-  // console.log(id)
+  // const { id = '' } = params 
+  console.log(id)
   const [form] = Form.useForm();
   // HotelList 用的onFinish 事件，这使用点击事件
   const submit = () =>{
