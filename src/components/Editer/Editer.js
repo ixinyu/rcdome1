@@ -52,7 +52,7 @@ export default function Editer(props) {
       props.toParent(newHtml) //给父组件传递数据
     } 
     
-    console.log(props.value)
+    // console.log(props.value)
   }, [props.value])
   return (
     <div>

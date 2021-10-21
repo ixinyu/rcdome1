@@ -9,7 +9,7 @@ export default function AddHotelType(props) {
   // const id = props.location?.query?.id || "" //1
   // const { match: { params = {} } } = props
   // const { id = '' } = params 
-  console.log(id)
+  // console.log(id)
   const [form] = Form.useForm();
   // HotelList 用的onFinish 事件，这使用点击事件
   const submit = () =>{
@@ -31,7 +31,7 @@ export default function AddHotelType(props) {
   return (
     <div>
       <Form
-          form = {form} 
+          form = {form}
           labelCol={{ span: 2 }}
           wrapperCol={{ span: 10 }}
           initialValues={{sort:'0'}}

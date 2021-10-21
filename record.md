@@ -1,4 +1,4 @@
-视频：https://www.bilibili.com/video/BV1fw411d7R5?p=20&spm_id_from=pageDriver
+视频：https://www.bilibili.com/video/BV1fw411d7R5?p=25
 
 开发环境跨域代理：
 在 package.json 文件中添加 "proxy": "http://test.kemanla.com/" //代理地址
